@@ -1,0 +1,55 @@
+#container {
+    background-color: #31a8a8;
+    position: relative;
+    border: 1px solid black;;
+    width: 300px
+}
+#textInBox1 {
+  border: 1px solid black;
+  background-color: rgba(119, 119, 179, 0.774);
+  position: relative;
+  max-width: 100%;
+  float: right;
+  
+}
+#textInBox2 {
+    border: 1px solid black;
+    background-color: rgba(9, 9, 32, 0.774);
+    position: relative;
+    max-width: 100%;
+    float: right;
+    color: wheat;
+}
+#textInBox3 {
+    border: 1px solid black;
+    background-color: rgba(84, 84, 112, 0.774);
+    position: relative;
+    max-width: 100%;
+    float: right;
+    color: rgb(153, 168, 118);
+}
+
+@media screen and (min-width:991px) {
+     #Example {
+        width: 100%;
+        float: right;
+        display: flex;
+        gap: 100px;
+        height: 300px;
+
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #Example {
+        display: grid;
+        grid-template-columns: 50% 50%
+    }
+}
+@media screen and (max-width: 767px) {
+    #Example {
+        width: 100%;
+        display: grid;
+        align-items: down;
+        display: flex;
+        }
+}
